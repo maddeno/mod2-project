@@ -5,12 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
 Route.destroy_all
 Stop.destroy_all
 
-Route.create(name: "Niko", direction: "East/West", total_distance: 2850)
-Route.create(name: "Olivia", direction: "Easst/West", total_distance: 3000)
-Route.create(name: "Max", direction: "North/South", total_distance: 1500)
+Route.create(name: "Niko - Northern Corridor", directions: "East/West", total_distance: 2850)
+Route.create(name: "Olivia - Southern Corridor", directions: "East/West", total_distance: 3000)
+Route.create(name: "Max - Eastern Corridor", directions: "North/South", total_distance: 1500)
 
 
 
@@ -20,15 +22,26 @@ route_olivia_cities = ["Washington DC", "Charlotte", "Atlanta", "New Orleans", "
 
 route_max_cities = ["Miami", "Tampa", "Orlando", "Jacksonville", "Charleston", "Raleigh", "Richmond", "Baltimore", "Trenton", "Boston"]
 
+
 route_niko_cities.each do |city|
-    Stop.create(city_name: city, route_id: Route.find_by(name: "Niko").id)
+    Stop.create(city_name: city, route_id: Route.find_by(name: "Niko - Northern Corridor").id)
 end
 
 route_olivia_cities.each do |city|
-    Stop.create(city_name: city, route_id: Route.find_by(name: "Olivia").id)
+    Stop.create(city_name: city, route_id: Route.find_by(name: "Olivia - Southern Corridor").id)
 end
 
 route_max_cities.each do |city|
-    Stop.create(city_name: city, route_id: Route.find_by(name: "Max").id)
+    Stop.create(city_name: city, route_id: Route.find_by(name: "Max - Eastern Corridor").id)
 end
 
+
+Passenger.create(first_name: "Olivia", last_name: "Madden", email: "madden@gmail.com", password_digest: "Olivia")
+
+Passenger.create(first_name: "Niko", last_name: "Dixon", email: "dixon@gmail.com", password_digest: "Niko")
+
+Passenger.create(first_name: "Max", last_name: "McFadden", email: "mcfadden@gmail.com", password_digest: "Max")
+
+10.times do
+    Passenger.create(first_name: Faker::Name.unique.first_name, last_name: Faker::Name.unique.last_name, email: Faker::Internet.unique.email, password_digest: Faker::Beer.unique.brand)
+end
