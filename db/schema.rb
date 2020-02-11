@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2020_02_10_220555) do
     t.string "destination_city"
     t.string "departure_city"
     t.datetime "departure_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "routes", force: :cascade do |t|
