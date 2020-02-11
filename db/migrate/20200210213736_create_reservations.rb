@@ -7,6 +7,8 @@ class CreateReservations < ActiveRecord::Migration[6.0]
       t.string :destination_city 
       t.string :departure_city 
       t.datetime :departure_date
+
+      t.timestamps
     end
   end
 end
