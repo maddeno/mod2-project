@@ -2498,3 +2498,326 @@ Migrating to CreateStops (20200210214440)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mPassenger Load (0.2ms)[0m  [1m[34mSELECT "passengers".* FROM "passengers" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mPassenger Load (0.3ms)[0m  [1m[34mSELECT "passengers".* FROM "passengers" ORDER BY "passengers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Destroy (0.4ms)[0m  [1m[31mDELETE FROM "routes" WHERE "routes"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Destroy (0.2ms)[0m  [1m[31mDELETE FROM "routes" WHERE "routes"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Destroy (0.2ms)[0m  [1m[31mDELETE FROM "routes" WHERE "routes"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStop Load (0.3ms)[0m  [1m[34mSELECT "stops".* FROM "stops"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 91]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.4ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 92]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.5ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 93]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 94]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 95]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 96]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 97]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 98]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 99]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 100]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 102]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 103]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 104]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 105]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 106]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 107]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 108]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 109]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 110]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 111]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 112]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 113]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 114]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 115]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 116]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.5ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 117]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 118]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.3ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 119]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStop Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stops" WHERE "stops"."id" = ?[0m  [["id", 120]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Create (0.4ms)[0m  [1m[32mINSERT INTO "routes" ("name", "total_distance", "directions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Niko - Northern Corridor"], ["total_distance", 2850], ["directions", "East/West"], ["created_at", "2020-02-11 18:00:05.210771"], ["updated_at", "2020-02-11 18:00:05.210771"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Create (0.4ms)[0m  [1m[32mINSERT INTO "routes" ("name", "total_distance", "directions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Olivia - Southern Corridor"], ["total_distance", 3000], ["directions", "East/West"], ["created_at", "2020-02-11 18:00:05.215160"], ["updated_at", "2020-02-11 18:00:05.215160"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Create (0.3ms)[0m  [1m[32mINSERT INTO "routes" ("name", "total_distance", "directions", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Max - Eastern Corridor"], ["total_distance", 1500], ["directions", "North/South"], ["created_at", "2020-02-11 18:00:05.219098"], ["updated_at", "2020-02-11 18:00:05.219098"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.5ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "New York"], ["created_at", "2020-02-11 18:00:05.235521"], ["updated_at", "2020-02-11 18:00:05.235521"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.4ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Philadelphia"], ["created_at", "2020-02-11 18:00:05.243847"], ["updated_at", "2020-02-11 18:00:05.243847"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.4ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Pittsburgh"], ["created_at", "2020-02-11 18:00:05.250432"], ["updated_at", "2020-02-11 18:00:05.250432"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Cleveland"], ["created_at", "2020-02-11 18:00:05.255838"], ["updated_at", "2020-02-11 18:00:05.255838"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Chicago"], ["created_at", "2020-02-11 18:00:05.261090"], ["updated_at", "2020-02-11 18:00:05.261090"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Milwaukee"], ["created_at", "2020-02-11 18:00:05.266080"], ["updated_at", "2020-02-11 18:00:05.266080"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Minneapolis"], ["created_at", "2020-02-11 18:00:05.270666"], ["updated_at", "2020-02-11 18:00:05.270666"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Salt Lake City"], ["created_at", "2020-02-11 18:00:05.275617"], ["updated_at", "2020-02-11 18:00:05.275617"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Portland"], ["created_at", "2020-02-11 18:00:05.281619"], ["updated_at", "2020-02-11 18:00:05.281619"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Niko - Northern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 13], ["city_name", "Seattle"], ["created_at", "2020-02-11 18:00:05.286485"], ["updated_at", "2020-02-11 18:00:05.286485"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Washington DC"], ["created_at", "2020-02-11 18:00:05.291078"], ["updated_at", "2020-02-11 18:00:05.291078"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.4ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Charlotte"], ["created_at", "2020-02-11 18:00:05.312359"], ["updated_at", "2020-02-11 18:00:05.312359"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Atlanta"], ["created_at", "2020-02-11 18:00:05.317761"], ["updated_at", "2020-02-11 18:00:05.317761"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "New Orleans"], ["created_at", "2020-02-11 18:00:05.322379"], ["updated_at", "2020-02-11 18:00:05.322379"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Houston"], ["created_at", "2020-02-11 18:00:05.327023"], ["updated_at", "2020-02-11 18:00:05.327023"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Austin"], ["created_at", "2020-02-11 18:00:05.331753"], ["updated_at", "2020-02-11 18:00:05.331753"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Albuquerque"], ["created_at", "2020-02-11 18:00:05.336713"], ["updated_at", "2020-02-11 18:00:05.336713"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Phoenix"], ["created_at", "2020-02-11 18:00:05.341882"], ["updated_at", "2020-02-11 18:00:05.341882"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "Los Angeles"], ["created_at", "2020-02-11 18:00:05.347316"], ["updated_at", "2020-02-11 18:00:05.347316"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Olivia - Southern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 14], ["city_name", "San Francisco"], ["created_at", "2020-02-11 18:00:05.352862"], ["updated_at", "2020-02-11 18:00:05.352862"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Miami"], ["created_at", "2020-02-11 18:00:05.357829"], ["updated_at", "2020-02-11 18:00:05.357829"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Tampa"], ["created_at", "2020-02-11 18:00:05.362736"], ["updated_at", "2020-02-11 18:00:05.362736"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Orlando"], ["created_at", "2020-02-11 18:00:05.367426"], ["updated_at", "2020-02-11 18:00:05.367426"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Jacksonville"], ["created_at", "2020-02-11 18:00:05.372436"], ["updated_at", "2020-02-11 18:00:05.372436"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Charleston"], ["created_at", "2020-02-11 18:00:05.377700"], ["updated_at", "2020-02-11 18:00:05.377700"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Raleigh"], ["created_at", "2020-02-11 18:00:05.382181"], ["updated_at", "2020-02-11 18:00:05.382181"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Richmond"], ["created_at", "2020-02-11 18:00:05.386633"], ["updated_at", "2020-02-11 18:00:05.386633"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Baltimore"], ["created_at", "2020-02-11 18:00:05.391287"], ["updated_at", "2020-02-11 18:00:05.391287"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.2ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Trenton"], ["created_at", "2020-02-11 18:00:05.395801"], ["updated_at", "2020-02-11 18:00:05.395801"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."name" = ? LIMIT ?[0m  [["name", "Max - Eastern Corridor"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mStop Create (0.3ms)[0m  [1m[32mINSERT INTO "stops" ("route_id", "city_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["route_id", 15], ["city_name", "Boston"], ["created_at", "2020-02-11 18:00:05.401086"], ["updated_at", "2020-02-11 18:00:05.401086"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "madden@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "dixon@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "mcfadden@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "lane.schuster@osinski.co"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Cassidy"], ["last_name", "Brakus"], ["email", "lane.schuster@osinski.co"], ["password_digest", "Sierra Nevada"], ["created_at", "2020-02-11 18:00:05.533398"], ["updated_at", "2020-02-11 18:00:05.533398"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "antoine@greenholt.org"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tyson"], ["last_name", "Ferry"], ["email", "antoine@greenholt.org"], ["password_digest", "Amstel"], ["created_at", "2020-02-11 18:00:05.538082"], ["updated_at", "2020-02-11 18:00:05.538082"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "caitlin@swift.com"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Quintin"], ["last_name", "Reilly"], ["email", "caitlin@swift.com"], ["password_digest", "Sapporo"], ["created_at", "2020-02-11 18:00:05.543446"], ["updated_at", "2020-02-11 18:00:05.543446"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "luba@hickle.name"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gabrielle"], ["last_name", "Ebert"], ["email", "luba@hickle.name"], ["password_digest", "Tsingtao"], ["created_at", "2020-02-11 18:00:05.549203"], ["updated_at", "2020-02-11 18:00:05.549203"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "david@ondrickasteuber.biz"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Junko"], ["last_name", "Bashirian"], ["email", "david@ondrickasteuber.biz"], ["password_digest", "Blue Moon"], ["created_at", "2020-02-11 18:00:05.553631"], ["updated_at", "2020-02-11 18:00:05.553631"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "leigha@brown.net"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Wilbert"], ["last_name", "Mueller"], ["email", "leigha@brown.net"], ["password_digest", "Stella Artois"], ["created_at", "2020-02-11 18:00:05.558014"], ["updated_at", "2020-02-11 18:00:05.558014"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "kittie_wunsch@binshaag.biz"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jimmie"], ["last_name", "Boehm"], ["email", "kittie_wunsch@binshaag.biz"], ["password_digest", "Murphys"], ["created_at", "2020-02-11 18:00:05.562651"], ["updated_at", "2020-02-11 18:00:05.562651"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "jonell.kuhic@thompson.co"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.2ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Eilene"], ["last_name", "Emmerich"], ["email", "jonell.kuhic@thompson.co"], ["password_digest", "Birra Moretti"], ["created_at", "2020-02-11 18:00:05.567316"], ["updated_at", "2020-02-11 18:00:05.567316"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "coy_turner@wilkinson.net"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Shaunna"], ["last_name", "Littel"], ["email", "coy_turner@wilkinson.net"], ["password_digest", "Pabst Blue Ribbon"], ["created_at", "2020-02-11 18:00:05.572278"], ["updated_at", "2020-02-11 18:00:05.572278"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPassenger Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "passengers" WHERE "passengers"."email" = ? LIMIT ?[0m  [["email", "sena.becker@gerlach.biz"], ["LIMIT", 1]]
+  [1m[36mPassenger Create (0.3ms)[0m  [1m[32mINSERT INTO "passengers" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Summer"], ["last_name", "Langworth"], ["email", "sena.becker@gerlach.biz"], ["password_digest", "Quimes"], ["created_at", "2020-02-11 18:00:05.577769"], ["updated_at", "2020-02-11 18:00:05.577769"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTier Create (0.4ms)[0m  [1m[32mINSERT INTO "tiers" ("name", "amenities", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Monocle"], ["amenities", "Private Car with Bed & Bath, Fancy Meals by Chef Montclaire, Unlimited Bar-service"], ["price", 1000], ["created_at", "2020-02-11 18:00:05.588301"], ["updated_at", "2020-02-11 18:00:05.588301"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTier Create (0.3ms)[0m  [1m[32mINSERT INTO "tiers" ("name", "amenities", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Suit"], ["amenities", "Sleeper Car wih Shared Bath, Choice between 3 Meal-options, 2 Drink-tickets per Stop included"], ["price", 500], ["created_at", "2020-02-11 18:00:05.592325"], ["updated_at", "2020-02-11 18:00:05.592325"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTier Create (0.3ms)[0m  [1m[32mINSERT INTO "tiers" ("name", "amenities", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sweatpants"], ["amenities", "Comfy Seat in Standard Car, Access to Dining Car, Access to Bar"], ["price", 0], ["created_at", "2020-02-11 18:00:05.595886"], ["updated_at", "2020-02-11 18:00:05.595886"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTier Load (0.1ms)[0m  [1m[34mSELECT "tiers".* FROM "tiers" LIMIT ?[0m  [["LIMIT", 11]]
