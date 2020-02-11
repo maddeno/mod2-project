@@ -45,3 +45,11 @@ Passenger.create(first_name: "Max", last_name: "McFadden", email: "mcfadden@gmai
 10.times do
     Passenger.create(first_name: Faker::Name.unique.first_name, last_name: Faker::Name.unique.last_name, email: Faker::Internet.unique.email, password_digest: Faker::Beer.unique.brand)
 end
+
+
+Tier.create(name: "Monocle", amenities: "Private Car with Bed & Bath, Fancy Meals by Chef Montclaire, Unlimited Bar-service", price: 1000)
+
+Tier.create(name: "Suit", amenities: "Sleeper Car wih Shared Bath, Choice between 3 Meal-options, 2 Drink-tickets per Stop included", price: 500)
+
+Tier.create(name: "Sweatpants", amenities: "Comfy Seat in Standard Car, Access to Dining Car, Access to Bar", price: 0)
+
